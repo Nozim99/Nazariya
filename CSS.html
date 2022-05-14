@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML</title>
+  <style>
+    * {
+      font-family: sans-serif;
+    }
+    div {
+      border: 2px solid black;
+      padding: 10px 20px;
+      margin: 15px 20px;
+    }
+
+    .div {
+      margin: 0;
+      border: none;
+      border-bottom: 1px solid;
+      padding: 0;
+      padding-bottom: 3px;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 2px 0px;
+    }
+
+    h4 {
+      margin: 4px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <h3>max-height</h3>
+    <p>kontent o'lchamini balandligi berilgan o'lchamdan katta bo'lmaydi lekin kichik bo'lishi mumkin</p>
+  </div>
+
+  <div>
+    <h3>overflow: auto</h3>
+    <p>kontent qutisidan oshib ketsa skrol paydo bo'ladi va davomini skrol orqali ko'rish mumkin</p>
+  </div>
+
+  <div>
+    <h3>float</h3>
+    <p>elementni joylashuvini belgilaydi M.: float: left; element chapga joylashadi va qolgan elementlar bo'sh bo'lgan
+      qismini to'ldiradi</p>
+  </div>
+
+  <div>
+    <h3>vertical-align</h3>
+    <p>elementni ota elementiga nisbatan vertikal joylashtiradi. M.: vertical-align: center; vertikal o'qi bo'ylab
+      markazga joylanadi va bunda display: inline-block; ni yozish shart emas</p>
+  </div>
+
+  <div>
+    <h3>Text-decoration</h3>
+    <p>Matnga qo'shimcha bezak qo'shish uchun ishlatilinadi.
+    <ul>
+      <li>text-decoration: underline; - tekstni tagidan to'g'ri chiziq chizadi.</li>
+      <li>text-decoration: line-through; - tekstni o'rtasidan chiziq chizadi (o'chirilganligini bildirish uchun).</li>
+      <li>text-decoration: none; matn hech qanday bezakka ega bo'lmaydi.</li>
+    </ul>
+    <p>a tagini tagiga chizilgan chiziqni o'chirish uchun ishlatilinadi.</p>
+
+
+
+    </p>
+  </div>
+
+  <div>
+    <h3>Psedo classes</h3>
+    <p>Elementning holatini aniqlash uchun ishlatilinadi</p>
+
+    <p><b>hover</b> - elementni ustiga sichqoncha olib kelinganidagi holat <br>M:. .heading-1:hover{
+      stil qismi yoziladi
+      } </p>
+    <p><b>active</b> - elementni ustiga sichqoncha bosib turilgandagi holati</p>
+    <p><a target="_blank" href="https://www.w3schools.com/css/css_pseudo_classes.asp">Pseudo klasslarga qo'shimcha</a>
+    </p>
+  </div>
+
+  <div><h3>Grouping rules</h3>
+    <p>bir necha selektorlarni guruglab, ularga bir css qoidasini (xossa) ko'rsatib o'tish
+      <br>M.: false  <br> .heading-1 {color: coral}<br>.heading-2 {color: coral} <br>true <br> .heading-1 .heading-2{color: coral}
+    </p>
+  </div>
+
+  <div>
+    <h3>text-transform</h3>
+    <p>
+      <b>1. </b>text-transform: uppercase; - katta harfga o'tkazadi<br>
+      <b>2. </b>text-transform: lowercase; - kichik harfga o'tkazadi<br>
+      <b>3. </b>text-transform: capitalize; - birinchi harfni katta harfga o'tkazadi
+    </p>
+  </div>
+
+  <div><h3>letter-spacing</h3>
+    harflar orasidagi masofani belgilash uchun ishlatilinadi
+  </div>
+
+  <div>
+    <h3>clear</h3>
+    <p><b>clear: both;</b> - ikalat tomondan suzib chiqishni oldini oladi. float ishlatilganda kerak bo'ladi. floatni kamchiligini oldini oladi</p>
+  </div>
+
+  <div>
+    <h3>Font awesome</h3>
+    <p>
+      font awesomeni ulash uchun <a target="_blank" href="https://cdnjs.com">cdnjs.com</a> saytiga kirib ulanish ko'dini olish mumkin. <br> <a target="_blank" href="https://cdnjs.com/libraries/font-awesome">font-awesome</a>ni HTMLga ulash tagini olish
+    </p>
+  </div>
+
+  <div>
+    <h3>line-height</h3>
+    <p>qatorlar orasidagi masofani bildiradi <br>
+    line-height: 27px;</p>
+  </div>
+
+  <div>
+    <h3>Combinators  Kombinatsiya</h3>
+    <p><b>div p</b> - <i>div</i>ni ichidagi barcha <i>p</i> elementlarini belgilaydi</p>
+    <p><b>div > p</b> - <i>div</i>ni faqat farzand <i>p</i> elementlarini belgilaydi</p>
+    <p><b>div + p</b> - <i>div</i> elementlaridan keyin kelgan birinchi <i>p</i> elementini belgilaydi</p>
+    <p><b>div ~ p </b> - <i>div</i> elementiga qo'shni bo'lgan barcha <i>p</i> elementlarini belgilaydi</p>
+  </div>
+
+  <div>
+    <h3>Position</h3>
+    <p>Elementni joylashish turini aniqlab berish uchun ishlatiladigan xossa <br> <b>qiymatlar</b> static (default qiymat), relative, fixed, absolute, sticky</p>
+  </div>
+
+  <div>
+    <h3>static</h3>
+    <p><b>position: static;</b> - bunda elementga top, left, ... larni ishlatsak natija o'zgarmaydi</p>
+  </div>
+
+  <div>
+    <h3>relative</h3>
+    <b>position: relative;</b>
+    <p>Elementni o'zini hozirgi (normal) joylashuviga nisbatan joylashadi</p>
+  </div>
+
+  <div>
+    <h3>Viewport</h3>
+    <p>Veb sahifamizning foydalanuvchiga ko'rinadigan qismi</p>
+  </div>
+
+  <div>
+    <h3>Fixed</h3>
+    <b>position: fixed;</b>
+    <p>Element <b>"viewport"</b>ga nisbatan joylashadi. Bu degani, u har doim o'zini joyida qoladi va <b>scroll</b> paytida joyini o'zgartirmaydi</p>
+	</div>
+
+	<div>
+		<h3>Absolute</h3>
+		<p>Element o'zini eng yaqin joylashtirilgan (positioned) ajdod (ancestor) elementiga nisbatan joylashadi. Joylashtirilgan degani, positin xossasi <b>static</b> qiymatdan boshqa qiymatga ega bo'lgan elementga aytiladi</p>
+		<p>position: absolute;</p>
+	</div>
+
+	<div>
+		<h3>sticky</h3>
+		<p>
+			Element <b>scroll</b>ning qayerda joylashganiga qarab joylashadi. Bu qiymat <b>relative</b> va <b>fixed</b> qiymatlarini o'zida saqlaydi va <b>scroll</b>ni qayerda joylashganiga qarab shu ikki qiymatdan birini o'ziga oladi
+		</p>
+		<b>M.:</b>
+		<p>.sticky-box {<br>
+		position: sticky;<br>
+		top: 10px;<br>
+		}
+		</p>
+		<p>Bunda berilgan elementni <b>top</b> qismi 10px ga teng bo'lganda qiymati <b>relative</b>dan <b>fixed</b> qiymatiga o'zgaradi</p>
+	</div>
+
+	<div>
+		<h3>Z-index</h3>
+		<p>
+			Ustma-ust tushib qolgan elementlarni ketma-ketligini aniqlab beradi.
+			Kattaroq <b>"z-index"</b>ga ega bo'lgan element kichikrog'iga qaraganda oldinda joylashadi. Z-index har doim joylashtirilgan (positioned) elementlariga amal qiladi
+		</p>
+	</div>
+
+	<div>
+		<h3>overflow</h3>
+		<p>
+			Kontent elementni ichiga sig'may qolgan payti, o'zini qanday tutishini aniqlab beradi
+		</p>
+		<p>
+			<b>overflow: visible;</b><br>
+			<b>visible</b> - sig'may qolgan qismi boricha ekranda ko'rinadi va bu qiymat <b>default</b> qiymat hisoblanadi
+		</p>
+		<br>
+		<p>
+			<b>overflow: hidden;</b><br>
+			<b>hidden</b> - sig'may qolgan qismi ekrandan yashiriladi (berkitiladi) va foydalanuvchiga ko'rinmaydi
+		</p>
+		<br>
+		<p>
+			<b>overflow: scroll;</b><br>
+			<b>scroll</b> - sig'may qolgan qismini ko'rish uchun <b>scroll</b> qo'shiladi va barcha qismi sig'gan taqdirda ham <b>scroll</b> yo'qolmaydi
+		</p><br>
+		<p>
+			<b>overflow: auto;</b><br>
+			<p>
+				<b>auto</b> - xuddi <b>"scroll"ga o'xshash sig'may qolgan qismini ko'rish uchun <b>scroll</b> qo'shiladi, lekin faqatgina kerak bo'lgan payti</b>
+			</p>
+		</p><br>
+		<p>
+			Vertikal hamda gorizontal <b>"scroll"</b>ni <b>overflow-x</b> va <b>overflow-y</b> yordamida alohida qilib ko'rsatib o'tish mumkin <br><br>
+			.box {<br>
+				overflow-x: hidden;<br>
+				overflow-y: scroll;<br>
+			}
+		</p>
+	</div>
+
+	<div>
+    <h3>visibility</h3>
+    <p><b>visibility: hidden;</b> kontentni berkitadi <br>
+      <b>visibiliyt: visible;</b> kontentni ko'rsatadi
+    </p>
+  </div>
+
+  <div>
+    <h3>background-image</h3>
+    <p>Element uchun orqa fon rasm qo'shish uchun ishlatiladi</p>
+    <p>background-image: url("");</p>
+  </div>
+
+  <div>
+    <h3>background-repeat</h3>
+    <p>
+      Orqa fondagi rasmimiz qanday takrorlanishini belgilab beradi <br><br>
+      <b>background-repeat: repeat;</b> - default qiymat
+    </p>
+    <p>
+      <b>background-repeat: repeat-x;</b> - rasm faqat gorizontal o'qi bo'ylab takrorlanadi
+    </p>
+    <p>
+      <b>background-repeat: repeat-y;</b> - rasm faqat vertikal o'qi bo'ylab takrorlanadi
+    </p>
+    <p>
+      <b>background-repeat: no-repeat;</b> - rasmimiz qaytarilmaydi (takrorlanmaydi)
+    </p>
+  </div>
+
+  <div>
+    <h3>background-size</h3>
+    <p>Orqa fondagi rasmimiz qanday o'lchovga ega bo'lishini belgilab beradi</p><br>
+    <p>
+      <b>background-size: cover;</b> - berilgan elementimizni butunlay qoplaydi
+    </p>
+    <p><b>background-size: contain;</b> - rasmimiz to'liqligicha ko'rsatiladi</p>
+    <p><b>background-size: 200px 100px</b> - width: 200px, height: 100px  bo'ladi. Agar height berilmasa avtomatik tarzda belgilanadi</p>
+  </div>
+
+  <div>
+    <h3>background position</h3>
+    <p>Orqa fondagi rasmimiz elementimizni qayeridan boshlanishini belgilab beradi</p><br>
+    <p><b>background-position: left top;</b> - rasmimiz elementni tepa va chap tarafida joylashadi. <b>top, right, bottom, left, center.</b></p>
+    <p><b>background-position: right</b> - rasmimiz o'ngda va o'rtaga joylashadi</p><br>
+    <p><b>O'lchovni ko'rsatish</b></p>
+    <p><b>background-position: 300px 150px;</b> - chap tarafdan <b>300px</b> tepadan <b>150px</b>ga surildi</p>
+  </div>
+
+  <div>
+    <h3>opacity</h3>
+    Rasmimizning tasvirini anglatadi. 0 dan 1 gacha qiymatni qabul qiladi
+    <p><b>opacity: 1;</b> rasm tasviri to'liq ko'rinadi</p>
+    <p><b>opacity: 0;</b> - rasm tasviri ko'rinmaydi</p>
+    <p><b>opacity: 0.5;</b> - rasm tasviri 50% ko'rinadi</p>
+  </div>
+
+  <div>
+    <h3>gradient</h3>
+    <p>Bir vaqtning o'zida ko'rsatilgan ikki va undan ortiq ranglar orasida o'tish imkoniyatini beradi</p><br>
+    <p><b>background-image: linear-gradient( yo'nalishi, rang1, rang2, ...;</b></p>
+    <p><b>yo'nalishi</b>ni yozmasak <b>default</b> qiymat beriladi ya'ni tepadan pastga yo'naladi <br>
+    <b>to right</b> o'ngga, <b>to top left</b> tepa chap qismga qarab <b>rang1</b>dan <b>rang2</b>ga o'zgaradi</p><br><br>
+    <p><b>radial-gradient</b><br>
+      background-image: radial-gradient(shakl o'lchov va joylashuvi, rang1, rang2, ...) <br>
+      <b>default</b> qiymati ellipse
+    </p>
+  </div>
+
+  <div>
+    <h3>filter</h3>
+    <p>Elementga vizual effekt berish uchun ishlatiladi</p>
+    <p><b>filter: blur(5px)</b> - rasmimizni xiraligini belgilaydi <br>
+      <b>grayscale(1)</b> - oq-qora ko'rinishga o'tkazadi va <a href="https://www.w3schools.com/cssref/css3_pr_filter.asp">yana ko'plab qiymatlari bor</a> 
+    </p>
+  </div>
+
+  <div>
+    <h3>tekstni rangini linear-gradient orqali o'zgartirish</h3>
+    <p><b>
+      background: linear-gradient(90deg, #1345e6, #ed239f);<br>
+  -webkit-background-clip: text;<br>
+  -webkit-text-fill-color: transparent;
+    </b></p>
+  </div>
+
+  <div>
+    <h3>color palette</h3>
+    <p>Odatda dizaynerlar tomonidan ishlatiladigan ranglar to'plami</p>
+  </div>
+
+  <div>
+    <h3>checked</h3>
+    <p>Radio button tanlanganda uning orqa fon rangini o'zgartirish</p>
+    <br><p>input-radio:checked ~ .cushtom-radio {<br>background-color: #2d846e;<br>}</p>
+  </div>
+
+  <div>
+    <h3>after</h3>
+    <p>cssdan htmlga element qo'shish uchun ishlatilinadi</p>
+    <p>.custom-radio:after {<br>top: 8px;<br>left: 8px;<br>width: 8px;<br>height: 8px; <br>border-radius: 50%; <br>background: white; <br>content: ""; <br>position: absolute; <br>}</p>
+    <p>Ulugbek Samigjonov. CSS. 31-dars. 8:40</p>
+  </div>
+
+  <div>
+    <h3>Pixel ratio</h3>
+    <p>Qurilmaning pixeldagi ekran o'lchovi va CSS yordamida ko'rsatilgan pixel orasidagi nisbat</p><br>
+    <p>@media not/only <i>media turi</i> and (<i>ifodalar</i>) { <br>// CSS kodlarimiz; <br>}</p><br>
+    <p>
+      <b>Media turlari</b> <br><b>1. all</b> - hamma media device (qurilmalar) uchun <br><b>screen</b> - kompyuter ekranlari, planshetlar, mobayl qurilmalar va k.k <br><b>print</b> - printerlar uchun
+    </p><br>
+    <p>@media only screen and (min-width: 900px) {} <br>@media only screen and (max-width: 1000px) {}</p>
+    <p><b>@media (){}</b> - qisqa versiyasi</p>
+  </div>
+
+  <div>
+    <h3>Media queries</h3>
+    <p>Kontentimizni ma'lum bir shartlarga ko'ra moslashtirish. Masalan, shart deb qurilmamizni ekran o'lchovini ma'lum bir pikseldan katta yoki kichkina bo'lishini misol qilishimiz mumkin</p><br>
+    <p><b>break point, breakpoint</b></p>
+    <p>mobil telefonlar <b>min-with: 576px;</b> <br>planshetlar <b>min-width: 768px;</b> <br>noutbuklar <b>mw: 992px;</b> <br> katta o'lchamga ega monitorlar <b>mw: 1200px;</b></p><br>
+    <p>bootstrapdagi breakpoints</p>
+    <p>x-small - 576px dan kichik <br>small (sm) - 576px dan katta yoki teng <br>medium (md) - 768px dan kichik yoki teng <br>large (lg) - 992px dan kichik yoki teng <br>extra large (xl) - 1200px dan kichik yoki teng <br>extra extra large (xxl) - 1400px dan kichik yoki teng
+    </p>
+  </div>
+
+  <div>
+    <h3>Fonts</h3>
+    <p>Veb sahifamiz uchun to'g'ri font (shrift) tanlash muhim hisoblanadi chunki ular veb sahifamizni qulay qilishda yordam beradi.</p>
+  </div>
+
+  <div>
+    <h3>Fonts families</h3>
+    <p>
+      "Font"larni 5 ta guruh (oila)ga bo'lishimiz mumkin: <b>Serif, Sans-serif, Monospace, Cursive</b> va <b>Fantasy</b>
+    </p><br>
+    <div class="div">
+      <p>
+        <b>Font oilasi <br>Tavsifi <br>Font nomi</b> <br><br>
+        1. Serif - Qirrasida chiziqlarga ega bo'lgan shriftlar - Times New Roman, Georgia, Garamond <br>
+        2. Sans-serif - Qirrasi tekis ko'rinishga ega bo'lgan shriftlar - Arial, Verdana, Helvetica <br>
+        3. Monospace - Hamma harflari bir xil kenglikka ega bo'lgan shriftlar - Courier New, Lucida Console, Monaco <br>
+        4. Cursive - Inson tomonidan qo'lda yozilganga o'xshagan natijani beradigan shriftlar - Brush Script MT, Lucida Handwriting <br>
+        5. Fantasy - Dekorativ (yasatilgan) / fantaziya ko'rinishiga ega bo'lgan shriftlar - Copperplate, Papyrus
+      </p>
+    </div>
+  </div>
+
+  <div>
+    <h3>CSS orqali Font o'zgartirish</h3>
+    <p><b>Font family</b> - CSS xossasi bo'lib, veb sahifamiz uchun font ko'rsatishda yordam beradi.</p><br>
+    <b>font-family: font-nomi-1, font-nomi-2, font-oilasi;</b> - Bu yerda istagancha font nomini yozishimiz mumkin
+  </div>
+
+  <div><h3>Google Fonts</h3>
+  <p><a href="http://fonts.google.com" target="_blank">Silkasi</a></p>
+  <p><b>Google fonts</b> - servis yordamida veb saytimizga turli xil fontlarni qo'shish imkoniyatiga ega bo'lamiz</p>
+  </div>
+
+  <div>
+    <h3>@font-face</h3>
+    <p>@font-face{ <br> font-family: 'Lato'; <br> src: url('./fonts/Lato/Lato-Regular.ttf'); <br>} <br>p { <br> font-family: 'Lato', sans-serif; <br>}</p>
+  </div>
+
+  <div>
+    <h3>font-style</h3>
+    <p><b>Font style</b> - matnimizni stilini belgilab beradi</p>
+    <p>M.: font-style: italic;</p><br>
+    1. normal 2. oblique 3. italic
+  </div>
+
+  <div>
+    <h3>2D</h3>
+    <p>Geometrik model bo'lib elementimizni joylashuvini aniqlash uchun 2 ta nuqta yetarli bo'ladi</p>
+  </div>
+  
+  <div>
+    <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" target="_blank">Transform</a></h3>
+    <p>Veb sahifadagi elementlarni aylantirish, siljinish, o'lchovini o'zgartirish, va og'dirish uchun ishlatilinadigan
+      CSS xossasi. Uning 2 ko'rinishi mavjud 2D va 3D</p><br>
+    <p>
+      <b><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate">Rotate</a></b> - elementimizni soat strelkasi yoki unga teskari bo'lgan yo'nalishda burish (aylantirish) uchun ishlatiladi. Musbat qiymat soat strelkasi bo'yicha, manfiy esa teskari yo'nalishda buradi <br>
+      <b>transform: rotate(daraja);</b>
+    </p>
+  </div>
+  
+  <div>
+    <h3>Transform origin</h3>
+    <p>O'zgartirish (transform) amal qiladigan nuqta</p>
+    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin">ma'lumot</a>
+    <p><b>transorm-origin: top left;</b></p>
+  </div>
+  
+  <div>
+    <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate" target="_blank">Translate</a></h3>
+    <p>Elementimizni xozirgi joyidan siljitish (surish) uchun ishlatiladi. Musbat qiymat o'ng va pastga qarab, manfiy esa chap va yuqoriga qarab siljitish uchun ishlatiladi</p>
+    <p><b>transorm: translate(x-qiymat, y-qiymat);</b></p>
+    <p><b>"Translate"</b> ning yana <b>"translateX()</b> va <b>translateY()</b> ko'rinishlari ham mavjud</p>
+  </div>
+  
+  <div>
+    <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale" target="_blank">Scale</a></h3>
+    <p>Elementimizni o'lchovini oshirish yoki kamaytirish uchun ishlatiladi. 0 bilan 1 orasida berilgan qiymat uning o'lchovini kamaytiradi, 1 dan katta qiymatlar esa o'lchovini oshiradi</p>
+    <p><b>transform: scale(x-qiymat, y-qiymat);</b></p>
+  </div>
+  
+  <div>
+    <h3><a href="https://developer.mozilla.org/ru/docs/Web/CSS/transform-function/skew" target="_blank">Skew</a></h3>
+    <p>Elementimizni ma'lum bir darajaga (degreega) og'dirish uchun ishlatiladi. Manfiy qiymat og'ish yo'nalishini teskari tomonga o'zgartiradi</p>
+    <p><b>transform: skew(x-qiymat, y-qiymat);</b></p>
+    <p><b>Skew</b>ning yana <b>SkewX()</b> va <b>skewY()</b> ko'rinishlari ham mavjud</p>
+  </div>
+
+  <div>
+    <h3>3D</h3>
+    <p>Geometrik model bo'lib elementimizni fazodagi joylashuvini aniqlash uchun 3 ta nuqtadan foydalaniladi</p>
+  </div>
+
+  <div>
+    <h3>3D Transform</h3>
+    <p>
+      Veb sahifadagi elementlarni uch o'lchovlik fazoda aylantirish, siljitish, o'lchovini o'zgartirish hisoblanadi <br>
+      <b>2D</b> va <b>3D</b> "transform"lar uchun bir xil <b>transform</b> CSS xossasi ishlatiladi
+    </p><br>
+
+    <div class="div">
+      <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/perspective" target="_blank">Perspextive</a></h3>
+      <p>Element foydalanuvchidan qanday uzoqlikda turganini belgilab beradi. Qiymat qancha kichik bo'lsa, foydalanuvchi elementga shuncha yaqin bo'ladi</p>
+    </div>
+
+    <div class="div">
+      <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d" target="_blank">rotate3d()</a></h3>
+      <p>
+        Elementni fazoda ko'rsatilgan qiymatlar bo'yicha aylantirish uchun ishlatiladi <br>
+        <b>transform: rotate3d(x-qiymat, y-qiymat, z-qiymat, daraja);</b>
+      </p>
+      <p><b>"Rotate3d"</b>ning yana <b>rotateX()</b>, <b>rotateY()</b> va <b>rotateZ()</b> ko'rinishlari ham mavjud</p>
+    </div>
+
+    <div class="div">
+      <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d" target="_blank">translate3d</a></h3>
+      <p>Elementni fazoda ko'rsatilgan qiymatlar bo'yicha siljitish uchun ishlatiladi</p>
+      <p><b>transform: translate3d(x-qiymat, y-qiymat, z-qiymat);</b></p>
+    </div>
+
+    <div class="div">
+      <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale3d" target="_blank">Scale3d</a></h3>
+      <p>Elementni fazoda ko'rsatilgan qiymatlar bo'yicha o'lchovini o'zgartirish uchun ishlatiladi</p>
+      <p><b>transform: scale3d(x-qiymat, y-qiymat, z-qiymat);</b></p>
+    </div>
+  </div>
+
+  <div>
+    <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" target="_blank">Transition</a></h3>
+    <p>Elementimizni <b>xossa qiymatlarini</b> ko'rsatilgan <b>vaqt</b> favomida <b>ravon o'zgarishini</b> ta'minlaydi. Transition yaratish uchun unga <b>ikki</b> qiymat ko'rsatilishi shart: effekt qo'shmoqchi bo'lgan <b>elementimiz xossasi</b> va effektning <b>davomiyligi.</b> Effektimiz davomiyligi son ko'rinishidagi qiymatga ega bo'lib, o'lchov birligi s (soniya) yoki ms (millisoniya)larda ko'rsatilishi kerak</p><br>
+    <p><b>transition: xossa-1 davomiyligi-1, xossa-2 davomiyligi-2, ..., xossa-n davomiyligi-n</b></p><br>
+    <p>Hamma CSS xossalari ham transition effektiga ega bo'la olmaydi. Ko'rsatilgan <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target="_blank">havola</a> orqali qaysi xossalarga transition effektini ko'rsatish mumkin ekanligini bilib olishingiz mumkin</p>
+  </div>
+
+  <div>
+    <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function" target="_blank">Transition timing function</a></h3>
+    <p>Effektimizni tezligi qanday egri chiziqga ega bo'lishini belgilab beradi</p>
+    <p>
+      <b>ease</b> - effektimiz sekin boshlanib, keyin tezlashib va yana sekinlik bilan tugaydi. Bu default qiymat <br>
+      <b>linear</b> - effektimiz ko'rsatilgan vaqt davomida bir xil tezlikga ega bo'ladi <br>
+      <b>ease-in</b> - effektimiz sekin boshlanadi <br>
+      <b>ease-out</b> - effektimiz sekin tugaydi <br>
+      <b>ease-in-out</b> - effektimiz sekin boshlanib va sekin tugaydi <br>
+      <b>cubic-bezier(x,y,z,k)</b> - cubiz-bezier funksiyasi orqali, ko'rsatilgan egri chiqiz effektiga ega bo'ladi. x, y, z o'rniga qiymat ko'rsatiladi
+    </p> <br>
+    <p>transition-timing-function: ease;</p>
+  </div>
+
+  <div>
+    <h3>Transition delay</h3>
+    <p>Effektimiz qachon boshlanishini (kechikishini) belgilab beradi. Son ko'rinishidagi qiymatga ega bo'lib, o'lchov birligi s (soniya) yoki ms(millisoniya)larda ko'rsatilishi kerak</p> <br>
+    <p>
+      transition: ...;
+      transition-delay: kechikish-davomiyligi;
+    </p>
+  </div>
+
+  <div>
+    <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations" target="_blank">CSS animation</a></h3>
+    <p>Elementni bir "style"dan boshqa "style"ga asta - sekinlik bilan o'tishini ta'minlaydi. Animation istalgan CSS xossani istalgan martta o'zgartirish imkonini beradi</p>
+  </div>
+  
+  <div>
+    <h3>@keyframes</h3>
+    <p>Animatsiya stillarni qaysi vaqtda qaysi qiymatga o'zgartirishini belgilab beradi</p>
+    <p>
+      @keyframes animatsiya-nomi { <br>
+      &nbsp;&nbsp; keyframe-intervali-1 { <br>
+        &nbsp;&nbsp;&nbsp;&nbsp; xossa-1: qiymat-1; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp; xossa-2: qiymat-2; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp; . . . <br>
+        &nbsp;&nbsp;&nbsp;&nbsp; xossa-n: qiymat-n; <br>
+        &nbsp;&nbsp; } <br><br>
+        &nbsp;&nbsp; <b>. . .</b> <br><br>
+        &nbsp;&nbsp;keyframe-interval-n { <br> &nbsp;&nbsp;&nbsp;&nbsp;xossa-1: yangi-qiymat-1; <br> &nbsp;&nbsp;&nbsp;&nbsp;xossa-2: yangi-qiymat-2; <br> &nbsp;&nbsp;&nbsp;&nbsp; . . . <br> &nbsp;&nbsp;&nbsp;&nbsp;xossa-n: yangi-qiymat-n; <br>&nbsp;&nbsp;} <br>}
+    </p> <br>
+    <p>Animatsiyamizga <b>xoxlagan</b> nomimizni bersak bo'ladi. Keyframe interval uchun esa 0-100%ga bo'lgan qiymatlarni ko'rsatib o'tishimiz mumkin. 0 va 100% uchun <b>from</b> va <b>to</b> kalit so'zlaridan foydalanishimiz mumkin
+    </p>
+    <p>
+      @keyframes box-mover { <br>
+        &nbsp;&nbsp;0% { <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;left: 0; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;background-color: red; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;width: 200px; <br>
+          &nbsp;&nbsp;} <br> <br>
+        &nbsp;&nbsp;100% { <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;left: 500px; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;background-color: green; <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;width: 400px; <br>
+          &nbsp;&nbsp;} <br>
+        }
+    </p>
+  </div>
+  
+  <div>
+    <h3>Animation name</h3>
+    <p>Elementimiz ega bo'ladigan animatsiya nomi. <b>@keyframe</b> uchun ko'rsatilgan <b>animatsiya nomi</b> qiymat ko'rinishida ishlatiladi</p>
+    <p>animation-name: box-mover;</p>
+  </div>
+  
+  <div>
+    <h3>Animation duration</h3>
+    <p>Animatsiyani qanday <b>davomiylikga</b> ega bo'lishini belgilab beradi. <b>Son</b> ko'rinishidagi qiymatga ega bo'lib, o'lchov birligi <b>s</b> (soniya) yoli <b>ms</b> (millisoniya)larda ko'rsatilishi kerak</p>
+    <p>animation-duration: 4s;</p>
+  </div>
+  
+  <div>
+    <h3>Animation delay</h3>
+    <p>Animatsiyamiz qachon <b>boshlanishini (kechikishini)</b> belgilab beradi. <b>Son</b> ko'rinishidagi qiymatga ega bo'lib, o'lchov birligi <b>s</b> (soniya) yoki <b>ms</b> (millisoniya)larda ko'rsatilishi kerak</p>
+    <p>animation-delay: 2s;</p>
+  </div>
+  
+  <div>
+    <h3>Animation iteration count</h3>
+    <p>Animatsiyamiz necha marta <b>qaytarilishini</b> belgilab beradi. <b>Default</b> qiymati 1 ga teng</p>
+    <p>animation-iteration-count: 2;</p>
+  </div>
+  
+  <div>
+    <h3>Animation direction</h3>
+    <p>Animatsiya oldinga (forwards), orqaga (backwards) yoki almashinib (alternate) qo'yilishini belgilab beradi</p>
+    <p><b>normal</b> - Animatsiya oldinga qarab qo'yiladi</p>
+    <p><b>reverse</b> - Animatsiya orqaga qarab qo'yiladi</p>
+    <p><b>alternate</b> - Animatsiya birinchi oldinga keyin esa orqaga qarab qo'yiladi</p>
+    <p><b>alternate-reverse</b> - Animatsiya birinchi orqaga keyin esa oldinga qarab qo'yiladi</p>
+    <br>
+    <p>animation-direction: reverse;</p>
+  </div>
+  
+  <div>
+    <h3>Animation timing function</h3>
+    <p>Animatsiyamiz tezligi qanday egri chiziqga ega bo'lishini belgilab beradi</p>
+    <p><b>ease</b> - animatsiya sekin boshlanib, keyin tezlashib va yana sekinlik bilan tugaydi (default qiymat)</p>
+    <p><b>linear</b> - animatsiya ko'rsatilgan vaqt davomida bir xil tezlikga ega bo'ladi</p>
+    <p><b>ease-in</b> - animatsiya sekin boshlanadi</p>
+    <p><b>ease-out</b> - animatsiya sekin tugaydi</p>
+    <p><b>ease-in-out</b> - animatsiya sekin boshlanib va sekin tugaydi</p>
+    <p><b>cubic-bezier(x,y,z,k)</b> - cubiz-bezier funksiyasi orqali, ko'rsatilgan egri chiziq animatsiya ega bo'ladi. x, y, z, k o'rniga qiymat ko'rsatiladi</p><br>
+    <p>animation-timing-function: ease-in-out;</p>
+  </div>
+  
+  <div>
+    <h3>Animation fill mode</h3>
+    <p>Animatsiya boshlanishidan oldin va tugagandan so'ng, elementimiz o'zining oldingi xossalariga ega bo'ladi lekin quyidagi xossa orqali, bu holatni o'zgartirish mumkin</p>
+    <p><b>none</b> - animatsiya tugagandan so'ng, elementning oldingi xossalariga ta'sir qilmaydi</p>
+    <p><b>forwards</b> - element animatsiyaning oxirgi keyframe intervali tomonidan ko'rsatilgan xossalarga ega bo'ladi</p>
+    <p><b>backwards</b> - element animatsiyaning birinchi keyframe intervali tomonidan ko'rsatilgan xossalarga ega bo'ladi</p>
+    <p><b>both</b> - element animatsiyaning birinchi va oxirgi keyframe intervali tomonidan ko'rsatilgan xossalarga ega bo'ladi</p><br>
+    <p>animation-fill-mode: forwards;</p>
+  </div>
+  
+  <div>
+    <h3>Animatin play state</h3>
+    <p>Animatsiya qanday holatda ekanini belgilab beradi. Uning 2 qiymat mavjud: <b>running</b> (animatsiya davom etayotgan holat) va <b>paused</b> (animatsiya to'xtab qo'yilgan holat)</p><br>
+    <p>animation-play-state: paused;</p>
+  </div>
+  
+  <div>
+    <h3>Animation</h3>
+    <p>Animatsiyaga tegishli bo'lgan xossalar uchun qisqartma (shorthand)</p><br>
+    <p>animation: name duration timing-functin delay iteration-count fill-mode direction play-state;</p>
+    <p>animation: box-mover 4s linear 2s 2 backwards alternate running;</p>
+  </div>
+
+  <div>
+    <h3>Flexbox</h3>
+    <p>Float yoki position xossalari yordamisiz veb sahifada moslashuvchan (flexible) layout yaratishda yordam beradi. Boshqacha qilib aytganda, veb sahifadagi elementlarni joylashtirish uchun xizmat qiladi. Flexbox 2 asosiy elementlardan tashkil topgan: <b>flex container</b> va <b>flex items</b></p>
+  </div>
+
+  <div>
+    <h3>Flex container</h3>
+    <p>Display xossasi uchun <b>flex</b> qiymatiga ega bo'lgan elementga aytiladi</p>
+    <p>display: flex;</p>
+  </div>
+
+  <div>
+    <h3>Flex items</h3>
+    <p>veb sahifamizdagi flex container ota-onaga ega bo'lgan elementlar</p>
+  </div>
+
+  <div>
+    <h3>Flexbox model</h3>
+    <p>asoslari quyidagilardan tashkil topgan: <b>flex container, flex item, asosiy o'q</b> (main axis), <b>kesuvchi o'q</b> (cross axis)</p><br>
+    <p><img style="width: 100%; height: 100%" src="https://scontent.ftas1-1.fna.fbcdn.net/v/t39.30808-6/280689264_164886045926010_917107684600468728_n.jpg?_nc_cat=104&ccb=1-6&_nc_sid=730e14&_nc_ohc=hkqhHTpisIcAX8mALNS&_nc_ht=scontent.ftas1-1.fna&oh=00_AT9QYV9kUyf56-maj_XXw7ObfuSBO9E_GMHpCxUPL6MHOw&oe=628052F4" alt="Internetni yoqing"></p>
+  </div>
+
+  <div>
+    <h3>Flexbox Css xossalari</h3>
+    <p>Flexbox uchun ishlatilinadigan CSS xossalarimiz 2 guruhga bo'linadi: <b>flex container</b> va <b>flex items</b> xossalari</p> <br>
+    <div class="div">
+      <h3>Flex container</h3>
+      <p>flex-direction <br>
+        flex-wrap <br>
+        flex-flow <br>
+        justify-content <br>
+        align-items <br>
+        align-content        
+      </p>
+    </div> <br>
+    <div class="div">
+      <h3>Flex items</h3>
+      <p>
+        order <br>
+        flex-grow <br>
+        flex-shrink <br>
+        flex-basis <br>
+        flex <br>
+        align-self
+      </p>
+    </div>
+  </div>
+
+  <div>
+    <h3>Flex direction</h3>
+    <p>Asosiy o'qning yo'nalishini belgilab beradi va flex items shu o'qga nisbatan joylashganligi uchun, ularning ham yo'nalishi belgilanadi</p>
+    <div class="div"> <br>
+      <p><b><a href="https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-6/280390789_164888762592405_2204263535861656604_n.jpg?_nc_cat=105&ccb=1-6&_nc_sid=730e14&_nc_ohc=YenrZxy4SCsAX9ECjFz&_nc_ht=scontent.ftas2-2.fna&oh=00_AT_PP-6plyVb36wDoab_zR8HHKcVx-eHeLlNzlu-Rbf70A&oe=628049D5" target="_blank">row</a></b> - elementlarimiz chapdan o'ngga qarab joylashadi &nbsp; (default qiymat) <br>
+        <b><a href="https://scontent.ftas1-1.fna.fbcdn.net/v/t39.30808-6/280285900_164889019259046_570176735753956181_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=730e14&_nc_ohc=QufoKaM5vsAAX9hHitl&tn=Vyt7jFfVsnhJVICJ&_nc_ht=scontent.ftas1-1.fna&oh=00_AT-jvX1F1HsHHeMHf6eDPxkjF1RLsfw2HEfi8v6nRLgkxA&oe=627FE050" target="_blank">row-reverse</a></b> - elementlarimiz o'ngdan chapga qarab joylashadi <br>
+        <b><a href="https://scontent.ftas1-2.fna.fbcdn.net/v/t39.30808-6/280494068_164889215925693_7275860795709749344_n.jpg?_nc_cat=103&ccb=1-6&_nc_sid=730e14&_nc_ohc=Ct2tzzx2AbcAX92BQe_&tn=Vyt7jFfVsnhJVICJ&_nc_ht=scontent.ftas1-2.fna&oh=00_AT-rZMFd48CQDla-2C08CzMlgXvKIpOplPc8ESsp6wmgWw&oe=62808C1D" target="_blank">column</a></b> - elementlarimiz tepadan pastga qarab joylashadi <br>
+        <b><a href="https://scontent.ftas1-2.fna.fbcdn.net/v/t39.30808-6/280573082_164889312592350_3148344113140015753_n.jpg?_nc_cat=101&ccb=1-6&_nc_sid=730e14&_nc_ohc=xXneF-qSvGAAX9A8DFW&_nc_ht=scontent.ftas1-2.fna&oh=00_AT8XlDfroNnHyDTTMEcZXS2vKMm5kI4801uOAVFqtdDbVg&oe=62805550" target="_blank">column-reverse</a></b> - elementlarimiz pastdan tepaga qarab joylashadi
+      </p>
+    </div><br>
+    <p>flex-direction: row;</p>
+  </div>
+
+  <div>
+    <h3>Flex wrap</h3>
+    <p>Odatda flex elementlarimiz bitta liniyada joylashadi lekin flex wrap yordamida bu holatni o'zgartirish mumkin</p><br>
+    <p>
+      <b>nowrap</b> - hamma flex elementlar bitta liniyada joylashadi <br>
+      <b>wrap</b> - elementlar tepadan pastga bir necha liniyaga bo'linib joylashadi <br>
+      <b>wrap-reverse</b> - elementlar pastdan tepaga bir necha liniyaga bo'linib joylashadi
+    </p><br>
+    <p>flex-wrap: wrap;</p>
+  </div>
+
+  <div>
+    <h3>Flex flow</h3>
+    <p>
+      <b>flex-direction</b> va <b>flex-wrap</b> xossalari uchun qisqartma hisoblanadi
+    </p> <br>
+    <p>flex-flow: row wrap</p>
+  </div>
+
+  <div>
+    <h3>Justify content</h3>
+    <p>Asosiy o'qi bo'ylab elementlarimizni joylashuvini belgilaydi va qo'shimcha bo'sh joyni taqsimlashga yordam beradi</p> <br>
+    <p>
+      <b><a href="https://scontent.ftas1-2.fna.fbcdn.net/v/t39.30808-6/280509966_164894499258498_3942321549111113738_n.jpg?_nc_cat=103&ccb=1-6&_nc_sid=730e14&_nc_ohc=mn30N_B6FN4AX9thvpx&tn=Vyt7jFfVsnhJVICJ&_nc_ht=scontent.ftas1-2.fna&oh=00_AT8jpyOzKZ2OkehZLnUfiIfog-Vi06i9ByW9lgL2fge33g&oe=6280D70F" target="_blank">flex-start</a></b> - elementlarimiz flex container boshida joylashadi <br>
+      <b><a href="https://scontent.ftas1-2.fna.fbcdn.net/v/t39.30808-6/280667092_164894615925153_8084220212911451235_n.jpg?_nc_cat=100&ccb=1-6&_nc_sid=730e14&_nc_ohc=hQKlUQHjVZ8AX-8fjo3&_nc_ht=scontent.ftas1-2.fna&oh=00_AT9eMVlQJL59Vt-3wnb1fkGOwjM9W8BWc-zqRBxLPp1FdA&oe=62813D22" target="_blank">flex-end</a></b> - elementlarimiz flex container oxirida joylashadi <br>
+      <b><a href="https://scontent.ftas1-1.fna.fbcdn.net/v/t39.30808-6/280299405_164894772591804_1758169992734532350_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=730e14&_nc_ohc=BAGOhiYgk8YAX-AH0lX&_nc_oc=AQmidXj5Rd72NDDTEYToofa6LW2yD2sj4LtZRnhc1GwskKQoEW-qmrP9VsNEDFTkXtc&_nc_ht=scontent.ftas1-1.fna&oh=00_AT--ZegwBGLvhDIvPnG5cd0dLxaP8vhpY_clEQTqHt3j0w&oe=628072C7" target="_blank">center</a></b> - elementlarimiz flex container markazida joylashadi <br>
+      <b><a href="https://scontent.ftas2-1.fna.fbcdn.net/v/t39.30808-6/280488177_165437875870827_2132524075807419394_n.jpg?_nc_cat=111&ccb=1-6&_nc_sid=730e14&_nc_ohc=UhNiYEQdCEMAX9VaEu6&_nc_ht=scontent.ftas2-1.fna&oh=00_AT-wbj5Hr2lvumoUbnP7fMqa5Q-jO32J59Wh4jydQICrfg&oe=62847BA0" target="_blank">space-between</a></b> - elementlarimiz flex container bo'yicha teng taqsimlanadi. Birinchi elementimiz container boshida, oxirgi elementimiz esa container oxirida joylashadi <br>
+      <b><a href="https://scontent.ftas1-1.fna.fbcdn.net/v/t39.30808-6/280352469_164895019258446_3493068647043919166_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=730e14&_nc_ohc=dO4IdTma1BIAX9kUYaz&tn=Vyt7jFfVsnhJVICJ&_nc_ht=scontent.ftas1-1.fna&oh=00_AT8Jcfbc9jkWNEQMSt2l7xOiLnStFu7kQ3TGWfoHfTbvqA&oe=6280EBF4" target="_blank">space-around</a></b> - elementlarimiz flex container bo'yicha teng taqsimlanadi va har bir element atrofida teng masofa bo'ladi. Faqatgina birinchi, oxirgi element va container chegarali orasidagi masofa boshqa masofalardan farq qiladi <br>
+      <b><a href="https://scontent.ftas1-1.fna.fbcdn.net/v/t39.30808-6/280602007_164895145925100_3705211342900896069_n.jpg?_nc_cat=108&ccb=1-6&_nc_sid=730e14&_nc_ohc=-edlWNu_2XYAX9qXlwb&_nc_ht=scontent.ftas1-1.fna&oh=00_AT93MtHcvaxeywK0yk7mLFN80lgZ9LZalzW_Tj9555rn8Q&oe=627F78C0" target="_blank">space-evenly</a></b> - elementlarimiz flex container bo'yicha teng taqsimlanadi va har bir element atrofida teng masofa bo'ladi
+    </p>
+  </div>
+
+  <div>
+    <h3>Align items</h3>
+    <p>Kesuvchi o'qi (cross axis) bo'ylab elementlarni joylashuvini belgilaydi</p><br>
+    <p>
+      <b><a href="https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-6/280409859_164925949255353_8549736791658977808_n.jpg?_nc_cat=105&ccb=1-6&_nc_sid=730e14&_nc_ohc=EqFaklk_zZgAX9ORJ-I&_nc_ht=scontent.ftas2-2.fna&oh=00_AT9RRpxNJEe02jfh4T4V8RtsH7AfVWjoqLhkR69FMHXkcQ&oe=6280DAEB" target="_blank">stretch</a></b> - elementlarimiz "flex container" ni to'ldirish uchun cho'ziladi. <b>Default qiymat</b><br>
+      <b><a href="https://scontent.ftas1-2.fna.fbcdn.net/v/t39.30808-6/280293722_164926035922011_7106353527354499917_n.jpg?_nc_cat=100&ccb=1-6&_nc_sid=730e14&_nc_ohc=Pr9OiBC1W00AX90Bozm&_nc_ht=scontent.ftas1-2.fna&oh=00_AT9BaTC4t-x2vKazB6M9G1NAPpsNRcEM_LOwJ_Z14r1Zlw&oe=627FC498" target="_blank">center</a></b> - elementlarimiz kesuvchi o'qning markazida joylashadi <br>
+      <b><a href="https://scontent.ftas1-2.fna.fbcdn.net/v/t39.30808-6/280266518_164926175921997_6263081774612855894_n.jpg?_nc_cat=100&ccb=1-6&_nc_sid=730e14&_nc_ohc=_26jgZy5mdwAX8GIEVO&tn=Vyt7jFfVsnhJVICJ&_nc_ht=scontent.ftas1-2.fna&oh=00_AT9HtIwdy-DuKjynE2dRFeOxVJt0z8eWuq0nG7FHIfYP6Q&oe=62807C5B" target="_blank">flex-start</a></b> - elementlarimiz kesuvchi o'qning boshida joylashadi <br>
+      <b><a href="https://scontent.ftas1-1.fna.fbcdn.net/v/t39.30808-6/280335091_164926369255311_5271802349020537644_n.jpg?_nc_cat=106&ccb=1-6&_nc_sid=730e14&_nc_ohc=hcw9Q6KC6wIAX8dQn_Z&_nc_ht=scontent.ftas1-1.fna&oh=00_AT-QhI5VJh9ibkFxNmazpnsz_bcYLN7IzUwLxnuyfNYQMQ&oe=62805487" target="_blank">flex-end</a></b> - elementlarimiz kesuvchi o'qning oxirida joylashadi
+    </p> <br>
+    <p>align-items: stretch;</p>
+  </div>
+
+  <div>
+    <h3>Align content</h3>
+    <p>Kesuvchi o'q (cross axis) bo'ylab flex container liniyalarni joylashuvini belgilaydi va qo'shimcha bo'sh joyni taqsimlashga yordam beradi</p> <br>
+    <p>
+      <b><a href="https://scontent.ftas1-2.fna.fbcdn.net/v/t39.30808-6/280532319_164928422588439_1718039467869222948_n.jpg?_nc_cat=100&ccb=1-6&_nc_sid=730e14&_nc_ohc=-QT68vBW4oYAX8Djv0j&_nc_ht=scontent.ftas1-2.fna&oh=00_AT_jeQpeJLZQB1efnXAmlSgp7dgZV9TgF4Gt3EQAjNRSiQ&oe=62806784" target="_blank">stretch</a></b> - flex liniyalarimiz containerni to'ldirish uchun cho'ziladi. <b>default qiymat</b> <br>
+      <b><a href="https://scontent.ftas1-1.fna.fbcdn.net/v/t39.30808-6/280500430_164928635921751_8275371369629455553_n.jpg?_nc_cat=104&ccb=1-6&_nc_sid=730e14&_nc_ohc=hT4xJq-uHHIAX_4XbFa&tn=Vyt7jFfVsnhJVICJ&_nc_ht=scontent.ftas1-1.fna&oh=00_AT-vd2SA4UNS1JygIvdmMitB6wOiQafvnp5xQh8rMiurhA&oe=628134CD" target="_blank">flex-start</a></b> - flex liniyalarimiz container boshida joylashadi <br>
+      <b><a href="https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-6/280283605_164928789255069_8754030844934179454_n.jpg?_nc_cat=102&ccb=1-6&_nc_sid=730e14&_nc_ohc=AYwaC_BcdCQAX-ZAuyL&_nc_ht=scontent.ftas2-2.fna&oh=00_AT_-belM8V-Wdr9qO5_Cm4qRGBdg7V2bC958NSEmK4-6vQ&oe=628098F1" target="_blank">flex-end</a></b> - flex liniyalarimiz container oxirida joylashadi <br>
+      <b><a href="https://scontent.ftas1-1.fna.fbcdn.net/v/t39.30808-6/280178071_164928935921721_2043980393225924836_n.jpg?_nc_cat=104&ccb=1-6&_nc_sid=730e14&_nc_ohc=MKJZIZI60gAAX853q7t&_nc_ht=scontent.ftas1-1.fna&oh=00_AT8aypAE51Hbl-YG00BWdwMU4t6sxQVoxU5IXRrA_2tXnw&oe=6280B19F" target="_blank">center</a></b> - flex liniyalarimiz container markazida joylashadi <br>
+      <b><a href="https://scontent.ftas1-1.fna.fbcdn.net/v/t39.30808-6/280218902_164929309255017_378612456292698408_n.jpg?_nc_cat=108&ccb=1-6&_nc_sid=730e14&_nc_ohc=1lgsusnpFesAX_h4DhC&_nc_ht=scontent.ftas1-1.fna&oh=00_AT-tSrI-WKwP7EUIrk46BA7ZnV-3hewgfkAsjRkSfzf0og&oe=628021F9" target="_blank">space-between</a></b> - flex liniyalarimiz container bo'yicha teng taqsimlanadi. Birinchi flex liniyamiz container boshida, oxirgi flex liniyamiz esa container oxirida joylashadi <br>
+      <b><a href="https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-6/280660763_164929592588322_2598922720574978500_n.jpg?_nc_cat=107&ccb=1-6&_nc_sid=730e14&_nc_ohc=4CCTEC5qMWQAX-YrIjr&_nc_ht=scontent.ftas2-2.fna&oh=00_AT8J8KxREO2ogJNV9DG-Kq10OWXh1lNMxoymAHUdPCJU4Q&oe=627FAE37" target="_blank">space-around</a></b> - flex liniyalarimiz container bo'yicha teng taqsimlanadi va har bir liniya atrofida teng masofa bo'ladi. Faqatgina birinchi, oxirgi liniya va container chegarali orasidagi masofa boshqa masofalardan farq qiladi <br>
+      <b><a href="https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-6/280520669_164929752588306_675971043275118321_n.jpg?_nc_cat=102&ccb=1-6&_nc_sid=730e14&_nc_ohc=8v5N4SOpa80AX9B-COg&_nc_ht=scontent.ftas2-2.fna&oh=00_AT8MH_lvHrlNOi6078ijrTW1G9WKGlVPPqffrWHHD60FbA&oe=627FACC9" target="_blank">space-evenly</a></b> - flex liniyalirimiz container bo'yicha teng taqsimalanadi va har bir flex liniya atrofida teng masofa bo'ladi
+    </p>
+  </div>
+
+  <div>
+    <h3><a href="https://developer.mozilla.org/ru/docs/Web/CSS/order" target="_blank">Order</a></h3>
+    <p>Flex container ichida flex items oqimiga (flow) ko'ra joylashadi, ya'ni html kodda birinchi yozilgan flex item veb sahifada ham keladi, lekin <b>order</b> xossasi bu oqimni o'zgartirishi mumkin va flex items ketma-ketligini belgilab beradi.</p>
+    <p>Order xossasi son ko'rinishidagi qiymat qabul qiladi va qiymat qancha kichik bo'lsa, flex item boshqa "item"lardan oldinoq keladi</p>
+    <p><b>order: <i>son qiymat</i>;</b></p>
+  </div>
+
+  <div>
+    <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow" target="_blank">Flex grow</a></h3>
+    <p>"Flex item"ni kerak payti o'z o'lchovini qanday oshirishini belgilab beradi. U son ko'rinishidagi qiymat qabul qilib, bo'sh qolgan joyni qancha qismini egallashni ko'rsatib beradi. Default qiymati 0 hisoblanadi. Default qiymati 0</p>
+    <p>ota-ona qutisida bo'sh qolgan joyni to'ldirish uchun ishlatiladi</p>
+    <p><b>flex-grow: <i>son qiymat</i>;</b></p>
+  </div>
+
+  <div>
+    <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink" target="_blank">Flex shrink</a></h3>
+    <p>"flex item"ni kerak payti o'z o'lchovini qanday kichraytirishini belgilab beradi. U son ko'rinishidagi qiymat qabul qilib, joy qolmayothan payti element qanday suratda kichrayishini belgilab beradi. Default qiymati 1 hisoblanadi</p>
+    <p><b>flex grow</b> ga nisbatan teskari. joy yetishmaganda ishlidi</p>
+    <p><b>flex-shrink: <i>son qiymat</i>;</b></p>
+  </div>
+
+  <div>
+    <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis" target="_blank">Flex basis</a></h3>
+    <p>Flex item uchun boshlang'ich o'lchovni belgilab beradi</p>
+    <p><b>flex-basis: 300px;</b></p>
+    <p>"flex item"lar ketma ket bo'lsa kengligini belgilaydi, agar ustma-ust bo'lsa balandligini belgilaydi</p>
+  </div>
+
+  <div>
+    <h3>Flex</h3>
+    <p>
+      <b>flex-grow</b>, <b>flex-shrink</b> va <b>flex-basis</b> uchun qisqartma (shorthand) hisoblanadi 
+    </p>
+    <p><b>flex: flex-grow flex-shrink flex-basis;</b></p>
+    <p>elementlarni barchasi bir xil kenglikka erishish uchun elementlarga <b>1</b> qiymat beriladi</p>
+  </div>
+
+  <div>
+    <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-self" target="_blank">Align self</a></h3>
+    <p>flex container ichidagi ko'rsatilgan "flex item"ni joylashuvini belgilab beradi. Boshqacha qilib aytganda flex item uchun <b>align items</b> xossasi hisoblanadi</p><br>
+    <p>
+      <b>auto</b> - elementimiz ota-onasining (parent) align-items xossasini meros qilib oladi. <b>default qiymat</b><br>
+      <b><a href="https://scontent.ftas1-2.fna.fbcdn.net/v/t39.30808-6/280374184_165301059217842_3058019136160535342_n.jpg?_nc_cat=103&ccb=1-6&_nc_sid=730e14&_nc_ohc=NvNNCGc6kcIAX8Umb1r&tn=Vyt7jFfVsnhJVICJ&_nc_ht=scontent.ftas1-2.fna&oh=00_AT8cfHhR63Q_c0CcW_EA4hu2I-00O3gytrMxyzF7gnoquw&oe=62831A73" target="_blank">stretch</a></b> - elementimiz "flex container"ni to'ldirish uchun cho'ziladi <br>
+      <b><a href="https://scontent.ftas2-1.fna.fbcdn.net/v/t39.30808-6/280443032_165301175884497_2704020798267665930_n.jpg?_nc_cat=111&ccb=1-6&_nc_sid=730e14&_nc_ohc=UC7YFzC40VgAX-b1MPe&_nc_oc=AQmwlWpSUfM540rlcxxTFq-e57fWGM1u35_I7ZVFhXitn_Ed4KPCofVqnbXlICTiFXE&_nc_ht=scontent.ftas2-1.fna&oh=00_AT8anCWTZ3tIBcmB9zorpyVqekdFUGTA-Kzs0FkjaALPfQ&oe=628239B6" target="_blank">center</a></b> - elementimiz kesuvchi o'qning markazida joylashadi <br>
+      <b><a href="https://scontent.ftas2-1.fna.fbcdn.net/v/t39.30808-6/280390190_165301365884478_149785165670746070_n.jpg?_nc_cat=109&ccb=1-6&_nc_sid=730e14&_nc_ohc=mXKf6fxzewsAX8VoKy5&_nc_ht=scontent.ftas2-1.fna&oh=00_AT-ZCOIOGglSPjjoH6d8ATPy1gxGDhVCtbWCmBRfXG5x5A&oe=6282DD59" target="_blank">flex-start</a></b> - elementimiz kesuvchi o'qning boshida joylashadi <br>
+      <b><a href="https://scontent.ftas2-1.fna.fbcdn.net/v/t39.30808-6/280590354_165301485884466_962127501495530183_n.jpg?_nc_cat=111&ccb=1-6&_nc_sid=730e14&_nc_ohc=mUcvv7Is170AX_wTlRR&_nc_ht=scontent.ftas2-1.fna&oh=00_AT-hm2YRA-DhBF6xVSSDMRuM27Y6GH8oaib5VYR5KFGLJw&oe=628349D0" target="_blank">flex-end</a></b> - elementimiz kesuvchi o'qning oxirida joylashadi
+    </p><br>
+    <p><b>align-self: auto;</b></p>
+  </div>
+
+  <div>
+    <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">CSS Grid</a></h3>
+    <p>To'rga (setka) asoslangan layout bo'lib, float yoki position xossalari yordamisiz qatorlar va ustunlar yordamida veb sahifada layout yaratishda yordam beradi. Boshqacha qilib aytganda, veb sahifada elementlarni joylashtirish uchun xizmat qiladi. CSS Grid 2 asosiy elementlardan tashkil topgan: <b>grid container</b> va <b>grid item</b>.</p>
+  </div>
+
+  <div>
+    <h3>Grid container</h3>
+    <p>Display xossasi uchun <b>grid</b> yoki <b>inline-grid</b> qiymatiga ega bo'lgan elementga aytiladi.</p>
+    <p>Ikki asosiy xossasi mavjud: <b>grid-template-columns</b> va <b>grid-template-rows</b></p><br>
+    <p>
+      <b><a href="Grid container" target="_blank">Grid template columns</a></b> - container ichidagi ustunlar soni va uzunligini belgilashda ishlatiladi <br>
+      <b><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows" target="_blank">Grid template rows</a></b> - container ichidagi qatorlar balandligini belgilashda ishlatiladi
+    </p>
+  </div>
+
+  <div>
+    <h3>Grid item</h3>
+    <p>
+      "Grid item"ga tegishli xossalar yordamida elementni bir necha ustun va qatorlarni egallashini ko'rsatib o'tishimiz mumkin. Uning asosiy ikk xossasi mavjud: <b>grid-column</b> va <b>grid-row</b>. <br><br>      
+        <b><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column" target="_blank">Grid column</a></b> - element nechta ustunni o'z ichiga olishini belgilab beradi. <br><br>
+        <b>grid-column: 1 / 3;</b> - birinchi ustundan uchinchi ustungacha joyni egallashni angladatadi. [1;3). <br>
+        <b>grid-column: 1 / span 3;</b> - nechta ustunni o'z ichiga olishini bildiradi. Bunda uchinchi ustunni hosobga oladi. [1;3] <br><br><hr><br>
+        <b><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row" target="_blank">Grid row</a></b> - Element nechta qatorni o'z ichiga olishni belgilab beradi <br>
+      <b>grid-row: 1 / 3;</b><br>
+      <b>grid-row: 1 / span 2;</b>
+      <br>Yuqoridagilarni natijasi bir xil bo'ladi
+    </p>
+  </div>
+
+  <div>
+    <h3>Best practices</h3>
+    <img width="100%" height="100%" src="https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-6/280895305_165446172536664_1072084316753965896_n.jpg?stp=dst-jpg_s600x600&_nc_cat=105&ccb=1-6&_nc_sid=730e14&_nc_ohc=mFB-C4HVsrMAX9BX8bR&_nc_ht=scontent.ftas2-2.fna&oh=00_AT-iexiUa_zPsMx-X8k_FY8TXru93AST-Ou__fi9EfQgZg&oe=6284F90A" alt="internetni yoqing">
+  </div>
+
+  <div>
+    <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior" target="_blank">Scroll behavior</a></h3>
+    <p>Skrol ko'rinishini belgilaydi <br><br>
+      <b>scroll-behavior: smooth;</b> - skrol animatsiya bo'ladi. Default qiymati <b>auto</b> animatsiyasiz bo'ladi
+    </p>
+  </div>
+
+
+
+
+
+</body>   <!-- BODY -->
+
+</html>
